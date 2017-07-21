@@ -148,7 +148,7 @@
             handleMovement(options);
         });
 
-        $(options.parentElement).closest('form').submit(function() {
+        $(options.parentElement).closest('form').on('submit', function (e) {
             selected.find('option').prop('selected', true);
         });
 
